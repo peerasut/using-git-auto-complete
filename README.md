@@ -36,3 +36,6 @@ Ignore insecure directories and continue [y] or abort compinit [n]?
 - Run `compaudit` to list directories that is insecure (it can be written by other users)
 - Then run `sudo chmod -R 755 <directories from previous step>`
 
+
+## Other tools you might interest
+1) zsh auto-suggestions: https://github.com/zsh-users/zsh-autosuggestions
