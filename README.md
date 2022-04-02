@@ -25,3 +25,14 @@ autoload -U compinit && compinit
 zstyle ':completion:*:*:git:*' script ~/.git-completion.bash
 ```
 5) Restart your terminal or `source ~/.zshrc`
+
+## Issues
+1) When you `source ~/.zshrc`, if you get error:
+```
+zsh compinit: insecure directories, run compaudit for list.
+Ignore insecure directories and continue [y] or abort compinit [n]?
+```
+**Solution** (https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories)
+- Run `compaudit` to list directories that is insecure (it can be written by other users)
+- Then run `sudo chmod -R 755 <directories from previous step>`
+
